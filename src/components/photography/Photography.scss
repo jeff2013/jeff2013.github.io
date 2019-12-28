@@ -1,0 +1,31 @@
+@import 'src/variables';
+
+.photo-background {
+    background-color: $wildSand;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-header {
+    margin-bottom: $unrelated-distance * 2;
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    img.photo {
+        height: 200px;
+        width: 200px;
+        filter: grayscale(100%);
+        object-fit: cover;
+
+        &:hover {
+            filter: unset;
+        }
+    }
+}

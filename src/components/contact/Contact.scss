@@ -1,0 +1,29 @@
+@import 'src/variables';
+
+.about-background {
+    background-color: $neo;
+    height: 40vh !important;
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            color: $goldenGrass;
+        }
+    }
+
+    .circle-icon {
+        width: 100px;
+        height: 140px;
+        fill: $goldenGrass;
+    }
+
+    .contact-icon {
+        width: 140px;
+        height: 140px;
+        fill: $goldenGrass;
+    }
+
+}
