@@ -1,0 +1,39 @@
+@import 'src/variables';
+
+.values {
+    background-color: $neo;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1.title {
+        color: $wildSand;
+        font-weight: bold;
+        margin-top: -100px;
+    }
+
+    div.values-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    div.value-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: $unrelated-distance;
+        margin-right: $unrelated-distance;
+    
+        h1 {
+            color: $goldenGrass;
+        }
+
+        p {
+            max-width: 80%;
+            color: $wildSand;
+        }
+    }
+}
