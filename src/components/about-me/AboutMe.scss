@@ -1,17 +1,30 @@
 @import 'src/variables';
 
 .about-me {
+
+    div.image-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 60vw;
+        height: auto;
+        margin-left: $unrelated-distance * 3;
+
+        @media screen and (max-width: $mobile-width-large) {
+            width: 80vw;
+        }
+    }
+
     img.about-image {
-        max-height: 60vh;
-        max-width: 40vw;
-        margin-left: 20vh;
+        max-width: 100%;
+        height: auto;
         margin-right: $unrelated-distance * 2;
-    
+        max-height: 70vh;
+            
         @media screen and (max-width: $mobile-width-large) {
             margin-left: unset;
             margin-right: unset;
             margin-top: $unrelated-distance * 2;
-            max-width: 100vw;
         }
     }
     
@@ -19,12 +32,18 @@
         display: flex;
         flex-direction: row;
         width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
     
         @media screen and (max-width: $mobile-width-large) {
             flex-direction: column;
     
             justify-content: center;
             align-items: center;
+        }
+
+        @media screen and (max-width: 975px) {
+            align-items: flex-start;
         }
     }
     
@@ -44,13 +63,14 @@
         margin-left: $unrelated-distance;
     
     
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: $mobile-width-large) {
             margin-left: unset;
             margin-right: unset;
         }
     
         h2.title {
             margin-bottom: unset;
+            margin-top: unset;
         }
     }
 

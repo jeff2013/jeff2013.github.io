@@ -7,7 +7,9 @@ function AboutMe() {
     return (
         <div className="fullscreen-container about-me">
             <div className="content-container">
-                <img className="about-image" src={aboutme} alt="about-me"></img>
+                <div className="image-container">
+                    <img className="about-image" src={aboutme} alt="about-me"></img>
+                </div>
                 <div className="center-container">
                     <div className="content">
                         <h2 className="title">About me</h2>
