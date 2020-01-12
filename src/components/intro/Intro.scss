@@ -3,11 +3,57 @@
 div.intro-container {
     height: 100vh;
     width: 100vw;
-    background-color: $neo;
+    background-color: $wildSand;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    div.text-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+
+        div.intro-header {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+
+            div.line {
+                width: 100%;
+                height: 4px;
+                background-color: $neo;
+            }
+
+            p {
+                margin: unset;
+                margin-left: $unrelated-distance;
+            }
+        }
+
+        h1 {
+            margin: unset;
+            font-size: 100px;
+            line-height: 100px;
+        }
+
+        h3 {
+            margin: unset;
+            text-align: left;
+            font-family: 'Futura';
+        }
+
+        button {
+            height: 30px;
+            background-color: $gullGrey;
+            width: 120px;
+            border-radius: 5px;
+
+        }
+
+    }
+
+
 
     p.title {
         color: $goldenGrass;

@@ -28,3 +28,13 @@ div.fullscreen-container {
   display: flex;
   align-items: center;
 }
+
+@font-face {
+  font-family: 'Futura';
+  src: local('Futura') local('futura') url(./assets/fonts/Futura-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'HWYGOTH';
+  src: url(./assets/fonts/HWYGOTH.TTF) format('truetype');
+}

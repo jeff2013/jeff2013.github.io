@@ -1,7 +1,8 @@
 @import 'src/variables';
 
 .about-me {
-
+    background-color: $wildSand;
+    
     div.image-container {
         display: flex;
         flex-direction: row;
