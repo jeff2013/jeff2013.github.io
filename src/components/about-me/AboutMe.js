@@ -8,6 +8,7 @@ function AboutMe() {
         <div className="fullscreen-container about-me">
             <div className="content-container">
                 <div className="image-container">
+                    <div className="accent-background"></div>
                     <img className="about-image" src={aboutme} alt="about-me"></img>
                 </div>
                 <div className="center-container">

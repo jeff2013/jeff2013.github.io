@@ -2,39 +2,14 @@
 
 .about-me {
     background-color: $wildSand;
-    
-    div.image-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 60vw;
-        height: auto;
-        margin-left: $unrelated-distance * 3;
+    position: relative;
 
-        @media screen and (max-width: $mobile-width-large) {
-            width: 80vw;
-        }
-    }
-
-    img.about-image {
-        max-width: 100%;
-        height: auto;
-        margin-right: $unrelated-distance * 2;
-        max-height: 70vh;
-            
-        @media screen and (max-width: $mobile-width-large) {
-            margin-left: unset;
-            margin-right: unset;
-            margin-top: $unrelated-distance * 2;
-        }
-    }
-    
     div.content-container {
         display: flex;
         flex-direction: row;
         width: 100%;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        height: 100vh;
+        position: relative;
     
         @media screen and (max-width: $mobile-width-large) {
             flex-direction: column;
@@ -45,47 +20,100 @@
 
         @media screen and (max-width: 975px) {
             align-items: flex-start;
+            height: unset;
+        }
+
+        div.accent-background {
+            position: absolute;
+            height: 100%;
+            width: 65%;
+            z-index: 1;
+            left: 0px;
+            background-color: $gullGrey;
+
+            @media screen and (max-width: 975px) {
+                display: none;
+            }
         }
     }
+    
+    div.image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        height: auto;
+        z-index: 2;
+        position: relative;
+
+        align-items: flex-end;
+        justify-content: center;
+
+        @media screen and (max-width: $mobile-width-large) {
+            width: 80vw;
+        }
+
+        img.about-image {
+            max-width: 75%;
+            height: auto;
+            max-height: 60vh;
+            z-index: 2;
+                
+            @media screen and (max-width: $mobile-width-large) {
+                margin-left: unset;
+                margin-right: unset;
+                margin-top: $unrelated-distance * 2;
+            }
+        }
+    }
+
     
     .center-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
-    }
-    
-    div.content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        margin-left: $unrelated-distance;
-    
-    
-        @media screen and (max-width: $mobile-width-large) {
-            margin-left: unset;
-            margin-right: unset;
-        }
-    
-        h2.title {
-            margin-bottom: unset;
-            margin-top: unset;
-        }
-    }
-
-    p.description {
-        margin-right: $unrelated-distance * 5;
-        text-align: left;
-
-        line-height: 2;
-        letter-spacing: 0.5px;
-        max-width: 40vw;
+        width: 50%;
 
         @media screen and (max-width: $mobile-width-large) {
-            margin-right: unset;
-            max-width: 80vw;
+            width: 100%;
+        }
+
+        div.content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            max-width: 75%;
+        
+        
+            @media screen and (max-width: $mobile-width-large) {
+                margin-left: unset;
+                margin-right: unset;
+            }
+        
+            h2.title {
+                margin-bottom: unset;
+                margin-top: unset;
+            }
+        }
+    
+        p.description {
+            margin-right: $unrelated-distance * 5;
+            text-align: left;
+    
+            line-height: 2;
+            letter-spacing: 0.5px;
+            max-width: 40vw;
+    
+            @media screen and (max-width: 975px) {
+                margin-right: $unrelated-distance;
+            }
+    
+            @media screen and (max-width: $mobile-width-large) {
+                margin-right: unset;
+                max-width: 80vw;
+            }
         }
     }
 }
