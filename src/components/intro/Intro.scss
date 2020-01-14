@@ -3,7 +3,7 @@
 div.intro-container {
     height: 100vh;
     width: 100vw;
-    background-color: $wildSand;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,17 +12,40 @@ div.intro-container {
     div.text-container {
         display: flex;
         flex-direction: column;
-        width: 40%;
+        width: 60%;
+        max-width: 400px;
+        
+        @media screen and (max-width: $mobile-width-medium) {
+            width: 80%;
+        };
 
         div.intro-header {
             display: flex;
             flex-direction: row;
-            align-items: flex-end;
+            align-items: flex-start;
+            position: relative;
+
+            img {
+                width: 100%;
+                max-width: 400px;
+
+                @media screen and (max-width: $mobile-width-medium) {
+                    max-width: 300px;
+                };
+            }
+
 
             div.line {
                 width: 100%;
+                max-width: 400px;
                 height: 4px;
                 background-color: $neo;
+                position: absolute;
+                bottom: 0px;
+
+                @media screen and (max-width: $mobile-width-medium) {
+                    max-width: 300px;
+                };
             }
 
             p {
@@ -35,20 +58,39 @@ div.intro-container {
             margin: unset;
             font-size: 100px;
             line-height: 100px;
+            text-align: left;
+
+            @media screen and (max-width: $mobile-width-large) {
+                font-size: 90px;
+                line-height: 90px;                
+            };
+
+            @media screen and (max-width: $mobile-width-medium) {
+                font-size: 80px;
+                line-height: 80px;;
+            }
+
         }
 
         h3 {
+            font-weight: normal;
             margin: unset;
+            margin-top: $related-distance;
             text-align: left;
             font-family: 'Futura';
+            padding-left: 8px;;
         }
 
-        button {
-            height: 30px;
-            background-color: $gullGrey;
-            width: 120px;
+        button.learn-more {
+            width: 50%;
+            height: 45px;
             border-radius: 5px;
-
+            background-color: $flamePea;
+            color: white;
+            border: unset;
+            margin-top: $unrelated-distance;
+            font-family: 'Futura';
+            font-size: 17px;
         }
 
     }

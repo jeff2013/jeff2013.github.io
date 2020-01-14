@@ -3,10 +3,21 @@ import './Intro.scss'
 import './Intro-desktop.scss'
 import '../../index.scss'
 import cartoon from '../../assets/jephph-cartoon.png';
+import { useState } from 'react';
 
 
 function Intro() {
-    var isDesktop = true;
+    const [isDesktop, setIsDesktop] = useState(() => {
+        return window.innerWidth > 800;
+    })
+    
+    window.addEventListener('resize', (e) => {
+        if (window.innerWidth <= 800) {
+            setIsDesktop(false);
+        } else {
+            setIsDesktop(true);
+        }
+    });
     
     if (isDesktop) {
         return (
@@ -37,13 +48,14 @@ function Intro() {
         return (
             <div className='intro-container'>
                 <div className="text-container">
+                    
                     <div className="intro-header">
-                        <div class="line"></div>
-                        <p>HELLO,</p>
+                    <img src={cartoon} alt="cartoon"></img>
+                        <div className="line"></div>
                     </div>
                     <h1>WELCOME</h1>
-                    <h3>My name is Jephph Chang and I’m a developer and a dog lover and BEAMERS</h3>
-                    <button>Learn More</button>
+                    <h3>My name is Jeff and I’m a web developer, basketball geek, photographer and dog lover.</h3>
+                    <button className="learn-more">Learn More</button>
                 </div>
             </div>
         )
