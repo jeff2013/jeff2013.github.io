@@ -17,7 +17,6 @@
         justify-content: space-around;
         align-items: flex-start;
 
-
         @media screen and (max-width: $mobile-width-large) {
             flex-direction: column;
         }
@@ -30,6 +29,8 @@
         align-items: center;
         margin-left: $unrelated-distance;
         margin-right: $unrelated-distance;
+        flex-grow: 1;
+        flex-basis: 0;
 
     
         h1 {
