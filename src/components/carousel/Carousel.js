@@ -16,6 +16,9 @@ function Carousel(props) {
         return 0;
     });
 
+    const [currentPosition, setCurrentPosition] = useState(() => {
+        return 4;
+    })
     useEffect(() => {
         if (touchEnd !== touchStart) {
             if (touchEnd < touchStart) {
@@ -26,9 +29,6 @@ function Carousel(props) {
         }
     }, [touchEnd])
 
-    const [currentPosition, setCurrentPosition] = useState(() => {
-        return 4;
-    })
 
     useEffect(() => {
         carouselContainer.current.scrollTo({
@@ -45,12 +45,11 @@ function Carousel(props) {
     }, [])
 
     const handleTouchStart = (e) => {
-        e.preventDefault();
         setTouchStart(e.touches[0].clientX);
     }
 
+
     const handleTouchEnd = (e) => {
-        e.preventDefault();
         setTouchEnd(e.changedTouches[0].clientX);
     }
 

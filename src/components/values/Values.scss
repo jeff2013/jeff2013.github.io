@@ -41,5 +41,9 @@
             max-width: 80%;
             color: $wildSand;
         }
+
+        &:last-of-type {
+            margin-bottom: $unrelated-distance*2;
+        }
     }
 }
