@@ -7,9 +7,6 @@ import VisibilitySensor from "react-visibility-sensor";
 
 
 function AboutMe() {
-
-
-
     const [fade, setFade] = useSpring(() => ({opacity: 0, config: {
         duration: 1000
     }}))

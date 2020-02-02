@@ -23,7 +23,6 @@ function Photography(props) {
     });
 
     useEffect(() => {
-        console.log("PROPS");
         const imgCopy = props.images;
         const imageElements = imgCopy.slice(0, 10).map((image) => {
             return <img className={image.id + ' photo'} src={image.image} alt={image.id} key={image.id}></img>
