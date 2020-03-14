@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Intro from '../intro/Intro';
 import AboutMe from '../about-me/AboutMe';
 import Photography from '../photography/Photography';
 import Contact from '../contact/Contact';
 import Values from '../values/Values';
+import LoadingPage from '../loading-page/loading-page';
 
 function generatePhotosTo(num) {
   var images = [];
@@ -17,17 +18,20 @@ function generatePhotosTo(num) {
   return images;
 }
 
+
 function App() {
+
   const images = generatePhotosTo(15);
-  return (
-    <div className="App">
-      <Intro/>
-      <AboutMe></AboutMe>
-      <Values></Values>
-      <Photography images={images}></Photography>
-      <Contact></Contact>
-    </div>
-  );
+    return (
+      <div className="App">
+        <LoadingPage/>
+        <Intro/>
+        <AboutMe></AboutMe>
+        <Values></Values>
+        <Photography images={images}></Photography>
+        <Contact></Contact>
+      </div>
+    )
 }
 
 export default App;
