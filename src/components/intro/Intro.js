@@ -30,7 +30,7 @@ function Intro() {
         setCartoonAnimation({
             transform: isVisible ? 'translate3d(0,0,0)' : 'translate3d(0, 200px, 0)',
             opacity: isVisible ? 1 : 0,
-            delay: 4200
+            delay: 0
         });
 
         setWelcomeAnimation({

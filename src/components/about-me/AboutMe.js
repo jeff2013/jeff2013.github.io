@@ -47,8 +47,8 @@ function AboutMe() {
                             <animated.p className="description" style={fade}>I strongly believe that the best way to get to know someone is over a good old, bitter, cup of dark black coffee <span role="img" aria-label="coffe-emoji">☕️</span> so here goes nothing.
                                 <br/>
                                 <br/>
-                                I'm an aspiring project/product manager who has fallen, sort of, in love with software development and beautiful, functional user interfaces. Why sort of?
-                                I love what I do but I still dream about opening a car repair shop, coaching basketball and adopting as many dogs as possible (which I believe is 2 per day).
+                                I'm an aspiring software architect/team lead who has a passion for software development and beautiful, functional user interfaces. 
+                                I love what I do but I still dream about opening a car repair shop, coaching basketball and adopting as many dogs as financially possible.
                                 Keep on scrolling to get a glimpse into my life, what my hobbies, passions, values and If you'd like to chat, you can reach me here!
                             </animated.p>
                         </div>

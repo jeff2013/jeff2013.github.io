@@ -9,19 +9,19 @@ function Values() {
             <div className="values-content">
                 <div className="value-container">
                     <h1>People First</h1>
-                    <p> 
-                        I strive to cultivate meaningful, lasting relationships at work through the art of bad jokes, board games and craft beer!
+                    <p className="content"> 
+                        I strive to cultivate meaningful, lasting relationships at work through the art of bad jokes, sports, board games and craft beer!
                     </p>
                 </div>
                 <div className="value-container">
                     <h1>Seek Discomfort</h1>
-                    <p>I believe that life's greatest experiences are outside of my comfort zone. Challenging myself to
+                    <p className="content">I believe that life's greatest experiences are outside of my comfort zone. Challenging myself to
                         seek discomfort daily, yields the most valuable experiences and lessons.
                     </p>
                 </div>
                 <div className="value-container">
                     <h1>Love The Process</h1>
-                    <p>Life is a series of goals, attained or not. I strive to enjoy the highs and lows
+                    <p className="content">Life is a series of goals, attained or not. I strive to enjoy the highs and lows
                         of the journey, not just the result; to learn anything and everything. Always Trust the Process.
                     </p>
                 </div>
