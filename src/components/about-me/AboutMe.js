@@ -44,12 +44,10 @@ function AboutMe() {
                     <div className="center-container">
                         <div className="content">
                             <animated.h2 className="title" style={rtl}>About me</animated.h2>
-                            <animated.p className="description" style={fade}>I strongly believe that the best way to get to know someone is over a good old, bitter, cup of dark black coffee <span role="img" aria-label="coffe-emoji">☕️</span> so here goes nothing.
+                            <animated.p className="description" style={fade}>First and foremost I am a lifelong LA Lakers fan who does recognize that the Lakers are a terrible team. On the weekends I'm going on adventures with my dog, rebuilding 90s sports cars, racing said sports cars or spending 3 hours in Costco. I believe that one day Lando Norris will win a WDC with McLaren no matter how many times I have to hear the Dutch national anthem.
                                 <br/>
                                 <br/>
-                                I'm an aspiring software architect/team lead who has a passion for software development and beautiful, functional user interfaces. 
-                                I love what I do but I still dream about opening a car repair shop, coaching basketball and adopting as many dogs as financially possible.
-                                Keep on scrolling to get a glimpse into my life, what my hobbies, passions, values and If you'd like to chat, you can reach me here!
+                                I love solving problems and also happen to be a software architect and team lead. Keep on scrolling to get a glimpse into my life, what my hobbies, passions, values and If you'd like to chat, you can reach me here!
                             </animated.p>
                         </div>
                     </div>

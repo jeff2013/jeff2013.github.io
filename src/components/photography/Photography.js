@@ -36,8 +36,7 @@ function Photography(props) {
         return (
             <div className="fullscreen-container photo-background">
                     <div className="photo-header">
-                        <h1>Photography is my form of expression</h1>
-                        <p>Every photo is a reflection of my happiness, pain and everything in between. Photography sparks my imagination and provides an escape.</p>
+                        <h1>Sometimes I take photos</h1>
                     </div>
                     <div className="photo-grid">
                        {imageElements}
@@ -48,8 +47,7 @@ function Photography(props) {
         return (
             <div className="fullscreen-container photo-background mobile">
                 <div className="photo-header">
-                        <h1>Photography is my form of expression</h1>
-                        <p>Every photo is a reflection of my happiness, pain and everything in between. Photography sparks my imagination and provides an escape.</p>
+                        <h1>Sometimes I take photos</h1>
                     </div>
                 <Carousel images={images}></Carousel>
             </div>

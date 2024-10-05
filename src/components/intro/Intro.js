@@ -39,7 +39,7 @@ function Intro() {
         })
     };
 
-    const descriptors = ['Software Developer', 'Basketball Geek', 'Photographer', 'Dog Lover']
+    const descriptors = ['Motorsport Enthusiast', 'Software Developer', 'Basketball Geek', 'Dog Dad']
 
     const handleLearnMore = () => {
         window.scrollTo({
@@ -95,7 +95,7 @@ function Intro() {
                         </div>
                         <div className="intro-content">
                             <h1>WELCOME</h1>
-                            <h3>My name is Jeff and I’m a web developer, basketball geek, photographer and dog lover.</h3>
+                            <h3>My name is Jeff and I’m a motorsport enthusiast, problem solver, basketball geek and dog dad.</h3>
                             <button className="learn-more" onClick={handleLearnMore}>Learn More</button>
                         </div>
                         
